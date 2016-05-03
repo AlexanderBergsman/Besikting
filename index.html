@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Besiktning</title>
+    <link rel="stylesheet" href="dist/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/my-app.css">
+    <script type="text/javascript" src="dist/js/framework7.min.js"></script>
+	<script type="text/javascript" src="appjs.js"></script>
+  </head>
+  <body>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><div class="list-block"><input type="text" name="adress" placeholder="Adress"></div></div>
+        <div class="center"></div>
+        <div class="right"><a href="#" class="button button-round active">+</a></div>
+    </div>
+</div>
+<div class="page-content">
+<div class="list-block" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;">
+   <ul>
+    <li class="accordion-item">
+
+					<a href="#" class="item-content item-link">
+						<div class="item-input">
+                          <input type="text" name="rum" placeholder="Rumsnamn">
+                        </div>
+					</a>
+					
+      <div class="accordion-item-content">
+        <div class="content-block">
+		<ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Bredd</div>
+                        <div class="item-input">
+                          <input type="tel" name="bredd" placeholder="Bredd">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				   <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label" name="langd">Längd</div>
+                        <div class="item-input">
+                          <input type="tel" placeholder="Längd" name="langd">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label" name="hojd">Höjd</div>
+                        <div class="item-input">
+                          <input type="tel" placeholder="Höjd" name="hojd">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Ålder vägg</div>
+						  <div class="item-input">
+                          <input type="date" placeholder="Birth day" value="2016-06-06" name="aldervagg">
+						  </div>
+                        <div class="item-input">
+                        </div>
+                      </div>
+                    </div>
+					<div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Ålder golv</div>
+                        <div class="item-input">
+                          <input type="date" placeholder="Birth day" value="2016-06-06" name="aldergolv">
+                        </div>
+                      </div>
+                    </div>
+					<div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Ålder tak</div>
+                        <div class="item-input">
+                          <input type="date" placeholder="Birth day" value="2016-06-06" name="aldertak">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Antal dörrar</div>
+                        <div class="item-input">
+                          <input type="tel" placeholder="Antal dörrar" name="antaldorrar">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Antal fönster</div>
+                        <div class="item-input">
+                          <input type="tel" placeholder="Antal fönster" name="antalfonster">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Golvärme</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox" name="golvvarme">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                    </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Snickare</div>
+                        <div class="item-input">
+                          <label class="label-switch" name="snickare">
+                            <input type="checkbox" name="snickare">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                    </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Rivare</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox" name="rivare">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Rörmokare</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox" name="rormokare">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Elektriker</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox" name="elektriker">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Plattsättare</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox" name="plattsattare">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Målare</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox" name="malare">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Övriga hantverkare</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox" name="ovrigahantverkare">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="align-top">
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Anteckningar</div>
+                        <div class="item-input">
+                          <textarea name="anteckningar"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  </ul>
+        </div>
+      </div>
+    </li>
+
+
+  </ul>
+  </div>
+  <div class="list-block" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;">
+   <ul>
+    <li class="accordion-item"><a href="#" class="item-content item-link">
+					<div class="item-input">
+                          <div class="center" style="width: 50%;"><input type="text" name="rum" placeholder="Rumsnamn" style="width: 50%;"></div>
+                        </div>
+					</a>
+      <div class="accordion-item-content">
+        <div class="content-block">
+		<ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Bredd</div>
+                        <div class="item-input">
+                          <input type="tel" name="bredd" placeholder="Bredd">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				   <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label" name="langd">Längd</div>
+                        <div class="item-input">
+                          <input type="tel" placeholder="Längd" name="langd">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label" name="hojd">Höjd</div>
+                        <div class="item-input">
+                          <input type="tel" placeholder="Höjd" name="hojd">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Ålder vägg</div>
+						  <div class="item-input">
+                          <input type="date" placeholder="Birth day" value="2016-06-06" name="aldervagg">
+						  </div>
+                        <div class="item-input">
+                        </div>
+                      </div>
+                    </div>
+					<div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Ålder golv</div>
+                        <div class="item-input">
+                          <input type="date" placeholder="Birth day" value="2016-06-06" name="aldergolv">
+                        </div>
+                      </div>
+                    </div>
+					<div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Ålder tak</div>
+                        <div class="item-input">
+                          <input type="date" placeholder="Birth day" value="2016-06-06" name="aldertak">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Antal dörrar</div>
+                        <div class="item-input">
+                          <input type="tel" placeholder="Antal dörrar" name="antaldorrar">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Antal fönster</div>
+                        <div class="item-input">
+                          <input type="tel" placeholder="Antal fönster" name="antalfonster">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Golvärme</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox" name="golvvarme">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                    </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Snickare</div>
+                        <div class="item-input">
+                          <label class="label-switch" name="snickare">
+                            <input type="checkbox" name="snickare">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                    </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Rivare</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox" name="rivare">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Rörmokare</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox" name="rormokare">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Elektriker</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox" name="elektriker">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Plattsättare</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox" name="plattsattare">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Målare</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox" name="malare">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Övriga hantverkare</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox" name="ovrigahantverkare">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="align-top">
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Anteckningar</div>
+                        <div class="item-input">
+                          <textarea name="anteckningar"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  </ul>
+        </div>
+      </div>
+    </li>
+
+
+  </ul>
+</div>
+              <div class="content-block">
+                <div class="row">
+                  <div class="col-100">
+				   <a href="#" id="visadata" class="button form-to-json">Spara</a>
+					</form>
+                  </div>
+                </div>
+              </div>
+</div>
+
+  </body>
+  </html>
